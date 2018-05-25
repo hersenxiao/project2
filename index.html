@@ -45,9 +45,14 @@
 
 //43.717935, 7.233588
 
+	var NavigationControl = new BMap.NavigationControl({
+		anchor:BMAP_ANCHOR_TOP_RIGHT
+	});
+	
+    //map.addControl(new BMap.NavigationControl());
+    map.addControl(NavigationControl);
 
-    map.addControl(new BMap.NavigationControl());
-console.log(ggPoint);
+	console.log(ggPoint);
     //添加gps marker和label
     var markergg = new BMap.Marker(ggPoint);
     //map.addOverlay(markergg); //添加GPS marker
