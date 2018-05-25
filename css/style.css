@@ -1,9 +1,16 @@
 
+#allmap{
+    position:relative;
+    z-index:0;
+}
+
 nav {
     width: 180px;
     font-family: Helvetica;
     text-transform: uppercase;  
     background-color: #222;
+    position:absolute;
+    z-index:1;
 }
 
 nav ul li{
